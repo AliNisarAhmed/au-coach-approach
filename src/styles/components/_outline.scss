@@ -1,0 +1,13 @@
+.outline {
+  position: relative; // for the icon at the top
+
+  grid-area: outline;
+
+  display: grid;
+  grid-template-rows: 1fr 5fr;
+  border: 1px solid blue;
+
+  &--heading {
+    align-self: end;
+  }
+}

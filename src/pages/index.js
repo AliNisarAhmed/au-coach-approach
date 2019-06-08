@@ -10,13 +10,14 @@ import "../styles/main.scss";
 import Hero from "../components/Hero";
 import Welcome from "../components/Welcome";
 import Goals from "../components/Goals";
+import Outline from "../components/Outline";
 
 const IndexPage = () => (
   <Layout>
     <Hero />
     <Welcome />
     <Goals />
-    <div>Course outline</div>
+    <Outline />
     <div>Successful course completion</div>
     <div>Meet the experts</div>
     <div>FOrm</div>

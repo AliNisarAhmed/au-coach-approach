@@ -1,0 +1,31 @@
+.diagram {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+
+  border: 1px solid pink;
+  width: 85%;
+  height: 100%;
+}
+
+.outer-circle {
+  width: 10rem;
+  height: 10rem;
+  border: 1px solid red;
+  background: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.inner-circle {
+  width: 9rem;
+  height: 9rem;
+  border-radius: 50%;
+  background: red;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

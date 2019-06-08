@@ -9,12 +9,18 @@
   color: white;
 
   &--small {
-    width: 6rem;
-    height: 6rem;
+    width: $icon-size-sm;
+    height: $icon-size-sm;
   }
 
   &--large {
-    width: 10rem;
-    height: 10rem;
+    width: $icon-size-lg;
+    height: $icon-size-lg;
   }
+}
+
+.top {
+  position: absolute;
+  top: -$icon-size-lg / 2;
+  left: calc(50% - #{$icon-size-lg / 2});
 }

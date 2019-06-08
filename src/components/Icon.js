@@ -1,5 +1,9 @@
 import React from "react";
 
-export default function Icon({ size }) {
-  return <div className={`icon icon--${size}`}>ICON</div>;
+export default function Icon({
+  size,
+  position = "default",
+  color = "bg-primary",
+}) {
+  return <div className={`icon icon--${size} ${position} ${color}`}>ICON</div>;
 }
