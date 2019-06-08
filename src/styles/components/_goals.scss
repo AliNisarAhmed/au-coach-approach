@@ -1,0 +1,23 @@
+.goals {
+  grid-area: goals;
+  justify-self: center;
+  background: $grey-light;
+
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+
+  .icon {
+    justify-self: center;
+    grid-column: 2 / 6;
+  }
+
+  &--title {
+    justify-self: center;
+    grid-column: 2 / 6;
+  }
+
+  &--text {
+    justify-self: center;
+    grid-column: 2 / 6;
+  }
+}

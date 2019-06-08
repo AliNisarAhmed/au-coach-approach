@@ -1,4 +1,4 @@
-import React from "react"
+import React from "react";
 
 const Navbar = () => (
   <nav className="navbar">
@@ -15,6 +15,6 @@ const Navbar = () => (
       <li>Search</li>
     </ul>
   </nav>
-)
+);
 
-export default Navbar
+export default Navbar;

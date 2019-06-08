@@ -7,14 +7,15 @@ import SEO from "../components/seo";
 import Header from "../components/header";
 
 import "../styles/main.scss";
-import Hero from "../components/hero";
-import Welcome from "../components/welcome";
+import Hero from "../components/Hero";
+import Welcome from "../components/Welcome";
+import Goals from "../components/Goals";
 
 const IndexPage = () => (
   <Layout>
     <Hero />
     <Welcome />
-    <div>Goals</div>
+    <Goals />
     <div>Course outline</div>
     <div>Successful course completion</div>
     <div>Meet the experts</div>
