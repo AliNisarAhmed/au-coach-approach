@@ -1,0 +1,14 @@
+.container {
+  display: grid;
+  grid-template-rows: 10rem calc(80vh - 10rem) 100vh 100vh 100vh 100vh 100vh 100vh 10rem;
+  grid-template-areas:
+    "header"
+    "hero"
+    "welcome"
+    "goals"
+    "course-outline"
+    "course-completion"
+    "experts"
+    "form"
+    "footer";
+}
