@@ -11,6 +11,7 @@ import Hero from "../components/Hero";
 import Welcome from "../components/Welcome";
 import Goals from "../components/Goals";
 import Outline from "../components/Outline";
+import Completion from "../components/Completion";
 
 const IndexPage = () => (
   <Layout>
@@ -18,7 +19,7 @@ const IndexPage = () => (
     <Welcome />
     <Goals />
     <Outline />
-    <div>Successful course completion</div>
+    <Completion />
     <div>Meet the experts</div>
     <div>FOrm</div>
     <footer>Footer</footer>

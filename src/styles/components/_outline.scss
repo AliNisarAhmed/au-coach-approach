@@ -6,6 +6,7 @@
   display: grid;
   grid-template-rows: 1fr 5fr;
   border: 1px solid blue;
+  background-color: $secondary-color-light;
 
   &--heading {
     align-self: end;

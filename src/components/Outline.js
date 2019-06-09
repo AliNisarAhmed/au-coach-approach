@@ -2,8 +2,22 @@ import React from "react";
 import Icon from "./Icon";
 import Diagram from "./Diagram";
 import Module from "./Module";
+import { useStaticQuery, graphql } from "gatsby";
 
 export default function Outline() {
+  const data = useStaticQuery(graphql`
+    query OutlineQuery {
+      site {
+        siteMetadata {
+          courseOutline {
+            weekNumber
+            modules
+          }
+        }
+      }
+    }
+  `);
+
   return (
     <section className="outline">
       <Icon size="large" color="bg-secondary" position="top" />
@@ -11,8 +25,14 @@ export default function Outline() {
         Course Outline and Timeline
       </h2>
       <div className="outline--content">
-        <Diagram />
-        <Module />
+        {data.site.siteMetadata.courseOutline.map(outline => {
+          return (
+            <div className="outline--contentBox">
+              <Diagram weekNumber={outline.weekNumber} />
+              <Module modules={outline.modules} />
+            </div>
+          );
+        })}
       </div>
     </section>
   );

@@ -1,13 +1,13 @@
 .container {
   display: grid;
-  grid-template-rows: 10rem calc(80vh - 10rem) 100vh 100vh 100vh 100vh 100vh 100vh 10rem;
+  grid-template-rows: 10rem calc(80vh - 10rem) 100vh 100vh 100vh 60vh 100vh 100vh 10rem;
   grid-template-areas:
     "header"
     "hero"
     "welcome"
     "goals"
     "outline"
-    "course-completion"
+    "completion"
     "experts"
     "form"
     "footer";

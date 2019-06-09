@@ -25,6 +25,29 @@ module.exports = {
         ],
       },
     ],
+    courseOutline: [
+      {
+        weekNumber: 1,
+        modules: [
+          `A Portrait of an Exceptional Leader and Leadership Basics`,
+          `Coach Approach - Coaching skills from a Leader's perspective`,
+        ],
+      },
+      {
+        weekNumber: 2,
+        modules: [
+          `A Portrait of an Exceptional Leader and Leadership Basics`,
+          `Coach Approach - Coaching skills from a Leader's perspective`,
+        ],
+      },
+      {
+        weekNumber: 3,
+        modules: [
+          `A Portrait of an Exceptional Leader and Leadership Basics`,
+          `Coach Approach - Coaching skills from a Leader's perspective`,
+        ],
+      },
+    ],
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
