@@ -2,6 +2,7 @@ import React from "react";
 import Input from "./Input";
 import Radio from "./Radio";
 import Checkbox from "./Checkbox";
+import Button from "./Button";
 
 export default class FormContent extends React.Component {
   constructor(props) {
@@ -31,7 +32,7 @@ export default class FormContent extends React.Component {
 
   render() {
     return (
-      <form>
+      <form className="formContent">
         <p>*Required Fields</p>
         <Input
           label="Your First Name"
@@ -59,6 +60,7 @@ export default class FormContent extends React.Component {
         />
         <Radio label="I'm interested in" required={true} />
         <Checkbox label="Yes, I would like to receive communications via e-mail from Athabasca" />
+        <Button size="large" />
       </form>
     );
   }

@@ -1,7 +1,7 @@
 import React from "react";
-import Icon from "./Icon";
-import Diagram from "./Diagram";
-import Module from "./Module";
+import Icon from "../components/Icon";
+import Diagram from "../components/Diagram";
+import Module from "../components/Module";
 import { useStaticQuery, graphql } from "gatsby";
 
 export default function Outline() {

@@ -1,5 +1,5 @@
 import React from "react";
-import Icon from "./Icon";
+import Icon from "../components/Icon";
 import BioCard from "../components/BioCard";
 
 export default function Experts() {

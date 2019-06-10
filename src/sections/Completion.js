@@ -1,5 +1,5 @@
 import React from "react";
-import LargeTextPanel from "./LargeTextPanel";
+import LargeTextPanel from "../components/LargeTextPanel";
 
 export default function Completion() {
   return (

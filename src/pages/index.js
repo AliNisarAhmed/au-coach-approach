@@ -2,18 +2,19 @@ import React from "react";
 import { Link } from "gatsby";
 
 import Layout from "../components/layout";
-import Image from "../components/image";
-import SEO from "../components/seo";
-import Header from "../components/header";
+// import Image from "../components/image";
+// import SEO from "../components/seo";
+// import Header from "../components/header";
 
 import "../styles/main.scss";
-import Hero from "../components/Hero";
-import Welcome from "../components/Welcome";
-import Goals from "../components/Goals";
-import Outline from "../components/Outline";
-import Completion from "../components/Completion";
-import Experts from "../components/Experts";
-import Form from "../components/Form";
+import Hero from "../sections/Hero";
+import Welcome from "../sections/Welcome";
+import Goals from "../sections/Goals";
+import Outline from "../sections/Outline";
+import Completion from "../sections/Completion";
+import Experts from "../sections/Experts";
+import Form from "../sections/Form";
+import Footer from "../sections/Footer";
 
 const IndexPage = () => (
   <Layout>
@@ -24,7 +25,7 @@ const IndexPage = () => (
     <Completion />
     <Experts />
     <Form />
-    <footer>Footer</footer>
+    <Footer />
   </Layout>
 );
 

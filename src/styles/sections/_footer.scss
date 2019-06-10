@@ -1,0 +1,47 @@
+.footer {
+  grid-area: footer;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  background-color: $secondary-color;
+  color: $white;
+  padding: 2rem;
+
+  &__links {
+    border-bottom: 1px solid $grey-dark;
+    padding-bottom: 1.5rem;
+  }
+
+  // hr {
+  //   width: 85%;
+  // }
+
+  &__link {
+    color: inherit;
+    text-decoration: none;
+    position: relative;
+    cursor: pointer;
+
+    &:hover {
+      text-decoration: underline;
+    }
+
+    &:not(:last-child) {
+      margin-right: 2.5rem;
+    }
+
+    &:not(:last-child)::after {
+      content: "";
+      position: absolute;
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      right: -1.5rem;
+      bottom: 40%;
+      color: $primary-color;
+      background-color: $primary-color;
+      pointer-events: none;
+    }
+  }
+}

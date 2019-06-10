@@ -1,8 +1,8 @@
 import React from "react";
 import { useStaticQuery, graphql } from "gatsby";
 
-import VerticalPanel from "./VerticalPanel";
-import Icon from "./Icon";
+import VerticalPanel from "../components/VerticalPanel";
+import Icon from "../components/Icon";
 
 export default function Goals() {
   const data = useStaticQuery(graphql`

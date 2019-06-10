@@ -1,7 +1,7 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faRunning } from "@fortawesome/free-solid-svg-icons";
-import FormContent from "./FormContent";
+import FormContent from "../components/FormContent";
 
 export default function Form() {
   return (

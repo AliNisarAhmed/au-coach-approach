@@ -17,7 +17,7 @@ export default function Input({
         onChange={handleValueChange}
         name={name}
       />
-      <label className={`${value ? "smallLabel" : ""}`} for={name}>
+      <label className={`${value ? "smallLabel" : ""}`} htmlFor={name}>
         <span className="star">{required ? "*" : null}</span>
         {label}
       </label>
