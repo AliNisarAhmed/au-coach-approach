@@ -1,0 +1,14 @@
+.radio {
+  &--text {
+    height: $input-height;
+    background-color: $grey-light;
+    margin: 0;
+  }
+
+  &--button {
+    display: flex;
+    align-items: center;
+    height: $input-height;
+    background-color: $white;
+  }
+}

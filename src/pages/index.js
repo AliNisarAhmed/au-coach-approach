@@ -13,6 +13,7 @@ import Goals from "../components/Goals";
 import Outline from "../components/Outline";
 import Completion from "../components/Completion";
 import Experts from "../components/Experts";
+import Form from "../components/Form";
 
 const IndexPage = () => (
   <Layout>
@@ -22,7 +23,7 @@ const IndexPage = () => (
     <Outline />
     <Completion />
     <Experts />
-    <div>FOrm</div>
+    <Form />
     <footer>Footer</footer>
   </Layout>
 );
