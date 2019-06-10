@@ -1,7 +1,7 @@
 import React from "react";
 
 export default function Icon({
-  size,
+  size = "large",
   position = "default",
   color = "bg-primary",
 }) {

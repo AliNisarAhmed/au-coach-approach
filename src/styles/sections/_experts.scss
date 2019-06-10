@@ -1,0 +1,22 @@
+.experts {
+  grid-area: experts;
+
+  align-self: start;
+  justify-self: center;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+
+  border: 1px solid yellow;
+
+  &--heading {
+    font-size: 2rem;
+    margin: 5rem 0;
+  }
+
+  &--content {
+    display: flex;
+  }
+}

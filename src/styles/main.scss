@@ -1,14 +1,20 @@
 @import "./variables/variables";
 @import "./pageStyles";
-@import "./components/layout";
-@import "./components/header";
-@import "./components/navbar";
-@import "./components/welcome";
-@import "./components/icon";
 @import "./utilities/utilities";
-@import "./components/goals";
+
+// Sections
+@import "./sections/layout";
+@import "./sections/header";
+@import "./sections/welcome";
+@import "./sections/goals";
+@import "./sections/outline";
+@import "./sections/completion";
+@import "./sections/experts";
+
+// Components
+@import "./components/navbar";
+@import "./components/icon";
 @import "./components/verticalPanel";
-@import "./components/outline";
 @import "./components/diagram";
-@import "./components/completion";
 @import "./components/largeTextPanel";
+@import "./components/bioCard";

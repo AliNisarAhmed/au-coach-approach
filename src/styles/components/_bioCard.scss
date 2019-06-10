@@ -1,0 +1,23 @@
+.bioCard {
+  display: flex;
+  flex-direction: column;
+  max-width: 25rem;
+  align-items: center;
+  justify-content: space-evenly;
+
+  &:not(:last-child) {
+    margin-right: 3rem;
+  }
+
+  svg {
+    font-size: 10rem;
+  }
+
+  &--heading {
+    font-size: 150%;
+  }
+
+  &--text {
+    text-align: center;
+  }
+}
