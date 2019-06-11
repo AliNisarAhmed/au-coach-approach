@@ -10,18 +10,25 @@
   justify-content: center;
   align-items: center;
 
-  &--box {
+  &__box {
     max-width: 70rem;
     width: 85%;
-    height: 85%;
-    background-color: rgba($white, 0.6);
+    height: 90%;
+    background-color: rgba($white, 0.8);
 
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
 
-    svg {
-      font-size: 5rem;
-    }
+  &__heading {
+    font-size: 2.5rem;
+    font-weight: normal;
+    margin: 1rem 0;
+  }
+
+  &__text {
+    font-size: 1.4rem;
+    margin: 1rem 0;
   }
 }

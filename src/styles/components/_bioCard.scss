@@ -1,7 +1,7 @@
 .bioCard {
   display: flex;
   flex-direction: column;
-  max-width: 25rem;
+  max-width: 40rem;
   align-items: center;
   justify-content: space-evenly;
 
@@ -9,15 +9,13 @@
     margin-right: 3rem;
   }
 
-  svg {
-    font-size: 10rem;
+  &__heading {
+    font-size: 3rem;
   }
 
-  &--heading {
-    font-size: 150%;
-  }
-
-  &--text {
+  &__text {
     text-align: center;
+    font-size: 1.4rem;
+    color: rgba(black, 0.5);
   }
 }

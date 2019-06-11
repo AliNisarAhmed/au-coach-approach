@@ -1,24 +1,64 @@
 import React from "react";
-import logo from "../images/au-logo-full.png";
+import Logo from "./Logo";
+import MyAU from "./MyAU";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faChevronDown,
+  faComments,
+  faSearch,
+} from "@fortawesome/free-solid-svg-icons";
 
 const Navbar = () => (
   <nav className="navbar">
     <ul>
       <li className="logo">
-        <a href="/">
-          <img src={logo} alt="logo" />
+        <a href="/" className="logo__link">
+          <Logo />
         </a>
       </li>
-      <li>Discover AU</li>
-      <li>
-        <a>Programs and Courses</a>
+      <li className="navbar__listItem">
+        <a href="/discover" className="navbar__link">
+          <span>Discover AU</span>
+          <FontAwesomeIcon icon={faChevronDown} />
+        </a>
       </li>
-      <li>Admissions</li>
-      <li>Current Students</li>
-      <li>About AU</li>
-      <li className="ml-auto">My AU</li>
-      <li>Help and Contact</li>
-      <li>Search</li>
+      <li className="navbar__listItem">
+        <a href="/programs" className="navbar__link">
+          <span>Programs and Courses</span>
+        </a>
+      </li>
+      <li className="navbar__listItem">
+        <a href="/admissions" className="navbar__link">
+          <span>Admissions</span>
+          <FontAwesomeIcon icon={faChevronDown} />
+        </a>
+      </li>
+      <li className="navbar__listItem">
+        <a href="/currentStudents" className="navbar__link">
+          <span>Current Students</span>
+          <FontAwesomeIcon icon={faChevronDown} />
+        </a>
+      </li>
+      <li className="navbar__listItem">
+        <a href="/about" className="navbar__link">
+          <span>About AU</span>
+          <FontAwesomeIcon icon={faChevronDown} />
+        </a>
+      </li>
+      <li className="ml-auto">
+        <a href="/myAU" className="logo__link--myAU">
+          <MyAU />
+        </a>
+      </li>
+      <li className="navbar__listItem">
+        <a href="/help" className="navbar__link">
+          <FontAwesomeIcon icon={faComments} />
+          <span>Help & Contact</span>
+        </a>
+      </li>
+      <li className="navbar__listItem">
+        <FontAwesomeIcon icon={faSearch} />
+      </li>
     </ul>
   </nav>
 );

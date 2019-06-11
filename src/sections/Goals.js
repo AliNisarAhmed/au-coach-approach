@@ -31,8 +31,12 @@ export default function Goals() {
         about showing you "the right way" but supporting you in your own
         leadership journey.
       </p>
-      {data.site.siteMetadata.verticalPanels.map(vPanel => (
-        <VerticalPanel title={vPanel.title} goals={vPanel.goals} />
+      {data.site.siteMetadata.verticalPanels.map((vPanel, i) => (
+        <VerticalPanel
+          title={vPanel.title}
+          goals={vPanel.goals}
+          number={i + 1}
+        />
       ))}
     </section>
   );

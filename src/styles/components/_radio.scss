@@ -1,14 +1,27 @@
 .radio {
-  &--text {
+  &__text {
     height: $input-height;
     background-color: $grey-light;
     margin: 0;
+    font-size: 1.4rem;
+
+    display: flex;
+    align-items: center;
+    padding-left: 1rem;
+
+    p {
+      margin: 0;
+    }
   }
 
-  &--button {
+  &__button {
     display: flex;
     align-items: center;
     height: $input-height;
     background-color: $white;
+
+    label {
+      margin-left: 0.5rem;
+    }
   }
 }

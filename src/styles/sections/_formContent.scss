@@ -1,3 +1,33 @@
 .formContent {
   width: 85%;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 2rem;
+  grid-row-gap: 2rem;
+
+  padding: 2rem;
+
+  &__required {
+    grid-column: 1 / 3;
+    justify-self: end;
+    color: rgba(black, 0.8);
+    margin: 0;
+    align-self: end;
+  }
+
+  &__email {
+    grid-column: 1 / 3;
+  }
+
+  &__radio {
+    grid-column: 1 / -1;
+  }
+
+  &__checkbox {
+    grid-column: 1 / -1;
+  }
+  &__submit {
+    grid-column: 1 / -1;
+  }
 }

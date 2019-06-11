@@ -9,14 +9,12 @@
   justify-content: flex-start;
   align-items: center;
 
-  border: 1px solid yellow;
-
-  &--heading {
-    font-size: 2rem;
+  &__heading {
+    font-size: 3rem;
     margin: 5rem 0;
   }
 
-  &--content {
+  &__content {
     display: flex;
   }
 }

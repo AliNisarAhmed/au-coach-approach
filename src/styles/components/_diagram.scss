@@ -2,17 +2,16 @@
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-
-  border: 1px solid pink;
-  width: 85%;
-  height: 100%;
+  margin-right: 2rem;
+  // border: 1px solid pink;
+  // height: 100%;
 }
 
 .outer-circle {
-  width: 10rem;
-  height: 10rem;
-  border: 1px solid red;
-  background: white;
+  width: 20rem;
+  height: 20rem;
+  border: 3px solid $primary-color;
+  background: inherit;
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -20,12 +19,27 @@
 }
 
 .inner-circle {
-  width: 9rem;
-  height: 9rem;
+  width: 18.5rem;
+  height: 18.5rem;
   border-radius: 50%;
   background: $primary-color;
 
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  p {
+    font-size: 1.8rem;
+    margin: 0;
+  }
+
+  h2 {
+    font-size: 7rem;
+    margin: 0;
+  }
+}
+
+.module {
+  font-size: 1.4rem;
 }

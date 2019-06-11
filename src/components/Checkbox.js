@@ -1,13 +1,13 @@
 import React from "react";
 
-export default function Checkbox({ label }) {
+export default function Checkbox({ label, receiveComs, className }) {
   return (
-    <>
-      <input type="checkbox" />
+    <div className={`checkbox ${className}`}>
+      <input type="checkbox" checked={receiveComs} />
       <label>
         {label}
         University<span className="star">*</span>
       </label>
-    </>
+    </div>
   );
 }

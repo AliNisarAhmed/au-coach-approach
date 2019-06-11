@@ -1,5 +1,6 @@
 .outline {
   position: relative; // for the icon at the top
+  color: $white;
 
   grid-area: outline;
 
@@ -8,7 +9,38 @@
   border: 1px solid blue;
   background-color: $secondary-color-light;
 
-  &--heading {
+  &__heading {
     align-self: end;
+    font-size: 3rem;
+  }
+
+  &__content {
+    position: relative;
+    height: 90rem;
+
+    &Box {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      &--1 {
+        position: absolute;
+        top: 10rem;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      &--2 {
+        position: absolute;
+        top: 40rem;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      &--3 {
+        position: absolute;
+        top: 70rem;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
   }
 }

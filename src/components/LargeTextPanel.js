@@ -8,16 +8,16 @@ export default function LargeTextPanel() {
         Participation in all modules and all practice quizzes through the
         content (40%)
       </p>
-      <p>Final quiz (60%)</p>
-      <p>
+      <p className="largeTextPanel--text">Final quiz (60%)</p>
+      <p className="largeTextPanel--text">
         To pass the quizzes and the final quiz, you will need to be engaged in
         the course and complete all modules
       </p>
-      <p>
+      <p className="largeTextPanel--text">
         There is only one way to be unsuccessful in this course - stop
         participating
       </p>
-      <p>
+      <p className="largeTextPanel--text">
         All quizzes are created to support your learning and will give you the
         opportunity to get to the "right" answer eventually. This course is more
         about the investmnent of your growth rather than giving grades

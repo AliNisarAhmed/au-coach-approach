@@ -14,7 +14,6 @@ import Outline from "../sections/Outline";
 import Completion from "../sections/Completion";
 import Experts from "../sections/Experts";
 import Form from "../sections/Form";
-import Footer from "../sections/Footer";
 
 const IndexPage = () => (
   <Layout>
@@ -25,7 +24,6 @@ const IndexPage = () => (
     <Completion />
     <Experts />
     <Form />
-    <Footer />
   </Layout>
 );
 

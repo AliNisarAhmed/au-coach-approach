@@ -1,6 +1,6 @@
 .container {
   display: grid;
-  grid-template-rows: 10rem calc(80vh - 10rem) 100vh 100vh 100vh 60vh 100vh 100vh 20rem;
+  grid-template-rows: 10rem calc(80vh - 10rem) 100vh 100vh auto 60vh 100vh 100vh 20rem;
   grid-template-areas:
     "header"
     "hero"

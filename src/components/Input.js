@@ -7,9 +7,10 @@ export default function Input({
   value,
   handleValueChange,
   name,
+  className,
 }) {
   return (
-    <div className="input">
+    <div className={`input ${className}`}>
       <input
         type={type}
         required={required}
