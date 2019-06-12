@@ -2,6 +2,7 @@
   grid-area: goals;
   justify-self: center;
   background: $grey-light;
+  padding: 4rem 0;
 
   display: grid;
   grid-template-columns: repeat(12, 1fr);
@@ -13,16 +14,24 @@
     grid-column: 1 / -1;
   }
 
-  &--title {
+  &__title {
     justify-self: center;
     grid-column: 1 / -1;
-    font-size: 3rem;
+    margin: 1rem 0;
   }
 
-  &--text {
+  &__text {
     justify-self: center;
     grid-column: 4 / 10;
     font-size: 1.4rem;
-    margin-bottom: 7rem;
+    margin-bottom: 4rem;
+    max-width: 120rem;
+
+    @include respond-min($goals__bp1) {
+      margin-bottom: 2rem;
+    }
+    @include respond-min($goals__bp2) {
+      grid-column: 2 / 12;
+    }
   }
 }

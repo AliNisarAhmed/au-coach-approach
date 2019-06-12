@@ -16,5 +16,9 @@
 
   &__content {
     display: flex;
+
+    @include respond-min($experts__bp1) {
+      flex-direction: column;
+    }
   }
 }

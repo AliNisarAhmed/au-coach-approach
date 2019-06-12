@@ -6,7 +6,9 @@ export default function Experts() {
   return (
     <section className="experts">
       <Icon />
-      <h2 className="experts__heading">Meet the "experts" & the team</h2>
+      <h2 className="experts__heading heading heading--lg">
+        Meet "experts" & the team
+      </h2>
       <div className="experts__content">
         <BioCard />
         <BioCard />

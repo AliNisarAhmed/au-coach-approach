@@ -1,9 +1,9 @@
 .mr-auto {
-  margin-right: auto;
+  margin-right: auto !important;
 }
 
 .ml-auto {
-  margin-left: auto;
+  margin-left: auto !important;
 }
 
 .text-center {
@@ -16,4 +16,27 @@
 
 .bg-secondary {
   background-color: $secondary-color;
+}
+
+.heading {
+  font-weight: 600;
+  color: $secondary-color;
+}
+
+.heading--lg {
+  font-size: 3rem;
+}
+
+.heading--md {
+  font-size: 1.8rem;
+}
+
+.white {
+  color: $white;
+}
+
+.text {
+  font-weight: 400;
+  font-size: 1.4rem;
+  color: $text-color;
 }

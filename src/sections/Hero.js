@@ -1,15 +1,15 @@
-import React from "react"
-import { StaticQuery, graphql } from "gatsby"
-import Img from "gatsby-image"
+import React from "react";
+import { StaticQuery, graphql } from "gatsby";
+import Img from "gatsby-image";
 
 export default function Hero() {
   return (
     <StaticQuery
       query={graphql`
         query {
-          placeholderImage: file(relativePath: { eq: "au-classroom.jpg" }) {
+          placeholderImage: file(relativePath: { eq: "au-img.jpg" }) {
             childImageSharp {
-              fluid(maxWidth: 1200) {
+              fluid(maxWidth: 1800) {
                 ...GatsbyImageSharpFluid
               }
             }
@@ -20,5 +20,5 @@ export default function Hero() {
         <Img fluid={data.placeholderImage.childImageSharp.fluid} />
       )}
     />
-  )
+  );
 }

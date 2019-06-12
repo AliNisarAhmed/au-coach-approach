@@ -5,18 +5,20 @@ export default function Welcome() {
   return (
     <section className="welcome">
       <div className="welcome__icons">
-        <Icon size="small" />
-        <Icon size="small" />
-        <Icon size="small" />
-        <Icon size="small" />
+        <div className="welcome__iconContainer">
+          <Icon size="small" />
+          <Icon size="small" />
+          <Icon size="small" />
+          <Icon size="small" />
+        </div>
       </div>
       <div className="welcome__main">
         <Icon size="large" />
-        <h3 className="welcome__heading text-center">
+        <h4 className="welcome__heading text-center heading heading--md">
           Welcome to the Coach Approach for Leadership Development
-        </h3>
+        </h4>
         <div className="welcome__text">
-          <div className="welcome__textLeft">
+          <div className="welcome__textLeft text">
             <p className="welcome__text--top">
               While the coaching approach may sound simple, most leaders
               struggle to really listen to their team members, to ask good
@@ -32,7 +34,7 @@ export default function Welcome() {
               team members.
             </p>
           </div>
-          <div className="welcome__textRight">
+          <div className="welcome__textRight text">
             <p className="welcome__text--top">
               Inspring leaders have many practiced tools and approaches in their
               toolkit. At times, leaders need to delegate, inspire, give

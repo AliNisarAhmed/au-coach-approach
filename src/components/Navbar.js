@@ -16,47 +16,52 @@ const Navbar = () => (
           <Logo />
         </a>
       </li>
-      <li className="navbar__listItem">
+      <li className="navbar__hamburger">
+        <button className="hamburger__container">
+          <div className="hamburger"></div>
+        </button>
+      </li>
+      <li className="navbar__listItem navbar__listItem--popDown navbar__collapse">
         <a href="/discover" className="navbar__link">
           <span>Discover AU</span>
           <FontAwesomeIcon icon={faChevronDown} />
         </a>
       </li>
-      <li className="navbar__listItem">
+      <li className="navbar__listItem navbar__collapse">
         <a href="/programs" className="navbar__link">
-          <span>Programs and Courses</span>
+          <span>Programs & Courses</span>
         </a>
       </li>
-      <li className="navbar__listItem">
+      <li className="navbar__listItem navbar__listItem--popDown navbar__collapse">
         <a href="/admissions" className="navbar__link">
           <span>Admissions</span>
           <FontAwesomeIcon icon={faChevronDown} />
         </a>
       </li>
-      <li className="navbar__listItem">
+      <li className="navbar__listItem navbar__listItem--popDown navbar__collapse">
         <a href="/currentStudents" className="navbar__link">
           <span>Current Students</span>
           <FontAwesomeIcon icon={faChevronDown} />
         </a>
       </li>
-      <li className="navbar__listItem">
+      <li className="navbar__listItem navbar__listItem--popDown navbar__collapse">
         <a href="/about" className="navbar__link">
           <span>About AU</span>
           <FontAwesomeIcon icon={faChevronDown} />
         </a>
       </li>
-      <li className="ml-auto">
+      <li className="ml-auto navbar__listItem">
         <a href="/myAU" className="logo__link--myAU">
           <MyAU />
         </a>
       </li>
-      <li className="navbar__listItem">
+      <li className="navbar__listItem navbar__listItem--comments">
         <a href="/help" className="navbar__link">
           <FontAwesomeIcon icon={faComments} />
           <span>Help & Contact</span>
         </a>
       </li>
-      <li className="navbar__listItem">
+      <li className="navbar__listItem navbar__listItem--search">
         <FontAwesomeIcon icon={faSearch} />
       </li>
     </ul>

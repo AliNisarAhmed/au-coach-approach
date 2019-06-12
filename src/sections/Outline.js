@@ -21,9 +21,9 @@ export default function Outline() {
   return (
     <section className="outline">
       <Icon size="large" color="bg-secondary" position="top" />
-      <h2 className="outline__heading text-center">
+      <h3 className="outline__heading text-center heading heading--lg white">
         Course Outline and Timeline
-      </h2>
+      </h3>
       <div className="outline__content">
         {data.site.siteMetadata.courseOutline.map((outline, i) => {
           return (

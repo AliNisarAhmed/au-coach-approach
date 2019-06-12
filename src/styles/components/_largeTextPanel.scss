@@ -1,8 +1,8 @@
 .largeTextPanel {
   border: 2rem solid rgba($grey-medium, 0.7);
   padding: 1rem 3rem 4rem 3rem;
+  margin: 3rem 0;
   max-width: 90rem;
-  min-width: 80rem;
 
   display: flex;
   flex-direction: column;
@@ -13,7 +13,6 @@
   }
 
   &--text {
-    font-size: 1.8rem;
     max-width: 70rem;
     margin: 0;
   }

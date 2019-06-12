@@ -4,7 +4,7 @@ export default function VerticalPanel({ title, goals, number }) {
   return (
     <div className={`vPanel vPanel--${number}`}>
       <div className="vPanel--title text-center">{title}</div>
-      <div className="vPanel--textbox">
+      <div className="vPanel--textbox text">
         {goals.map(goal => (
           <p>{goal}</p>
         ))}

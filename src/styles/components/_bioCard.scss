@@ -1,7 +1,7 @@
 .bioCard {
   display: flex;
   flex-direction: column;
-  max-width: 40rem;
+  max-width: 35rem;
   align-items: center;
   justify-content: space-evenly;
 
@@ -11,11 +11,18 @@
 
   &__heading {
     font-size: 3rem;
+
+    @include respond-min($experts__bp1) {
+      margin: 1rem 0;
+    }
   }
 
   &__text {
     text-align: center;
     font-size: 1.4rem;
-    color: rgba(black, 0.5);
+
+    @include respond-min($experts__bp1) {
+      margin: 1rem 0 2.5rem 0;
+    }
   }
 }
