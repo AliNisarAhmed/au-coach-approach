@@ -2,6 +2,10 @@
 
 ## Built with GatsbyJS (React) & Sass (CSS Grid and Flexbox mainly)
 
+### Project webpage
+
+The deployed project webpage can be seen on [here](https://au-coach-approach.netlify.com/)
+
 ### Navigating project files
 
 - Start from `src/sections/layout.js`, which lists all the sections of the page, and provides the overall skeleton layout of the page, (The Header and Footer sections are already included in `layout.js`)
@@ -15,4 +19,4 @@
 
 1. clone the repo
 2. `cd` into the repo and `npm install`
-3. run `gatsby develop` to run the app locally in development mode on `http://localhost:8000`. Run `gatsby build` to run the App in build mode locally.
+3. run `gatsby develop` to run the app locally in development mode on `http://localhost:8000`. Run `gatsby build` to get a production build and then run `gatsby serve` to run the production build locally.
