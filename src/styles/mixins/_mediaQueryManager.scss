@@ -1,18 +1,5 @@
 // MEDIA QUERY MANAGER
 
-/*
-0-600px => Phone
-600 - 900px => Tablet Portrait
-900 - 1200px => Tablet Landscape
-1200 - 1800px => Normal styles for Desktop
-1800+ px => Big Desktops
-  $breakpoint argument choices
-  - phone
-  - tab-port
-  - tab-land
-  - big-desk
-*/
-
 @mixin respond-min($breakpoint) {
   @media (max-width: $breakpoint) {
     @content;

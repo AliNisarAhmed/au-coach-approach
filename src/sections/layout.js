@@ -22,14 +22,3 @@ class Layout extends React.Component {
 }
 
 export default Layout;
-
-// <StaticQuery
-//   query={graphql`
-//     query SiteTitleQuery {
-//       site {
-//         siteMetadata {
-//           title
-//         }
-//       }
-//     }
-//   //

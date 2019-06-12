@@ -1,5 +1,6 @@
 import React from "react";
 
+// NOTE: Dropdown can be provided dynamic metaData from gatsby-config using queries, but right now I am hard coding the list Items
 export default function Dropdown({ open, clickedItem, parent }) {
   if (open && clickedItem === parent) {
     if (clickedItem === "discover") {

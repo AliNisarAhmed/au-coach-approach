@@ -2,12 +2,8 @@ import React from "react";
 import Logo from "./Logo";
 import MyAU from "./MyAU";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faChevronDown,
-  faComments,
-  faSearch,
-} from "@fortawesome/free-solid-svg-icons";
-import Dropdown from "./Dropdown";
+import { faComments, faSearch } from "@fortawesome/free-solid-svg-icons";
+import ListItem from "./ListItem";
 
 class Navbar extends React.Component {
   constructor(props) {
@@ -22,7 +18,6 @@ class Navbar extends React.Component {
 
   onDropDownClick(e) {
     e.persist();
-    console.log(e.target.id);
     this.setState(prevState => {
       if (prevState.dropDownOpen) {
         return {
@@ -54,89 +49,43 @@ class Navbar extends React.Component {
               <div className="hamburger"></div>
             </button>
           </li>
-          <li
-            className={`navbar__listItem navbar__listItem--popDown navbar__collapse ${
-              clickedItem === "discover" ? "active" : ""
-            }`}
-            id="discover"
-            onClick={this.onDropDownClick}
-            onFocus={this.onDropDownClick}
-            onBlur={this.onDropDownClick}
-            active={clickedItem === "discover"}
+          <ListItem
+            clickedItem={clickedItem}
+            onDropDownClick={this.onDropDownClick}
+            parent="discover"
+            dropDownOpen={dropDownOpen}
           >
-            <button className="navbar__link">
-              <span>Discover AU</span>
-              <FontAwesomeIcon icon={faChevronDown} />
-              <Dropdown
-                open={dropDownOpen}
-                clickedItem={clickedItem}
-                parent="discover"
-              />
-            </button>
-          </li>
+            Discover AU
+          </ListItem>
           <li className="navbar__listItem navbar__collapse">
             <a href="/programs" className="navbar__link">
               <span>Programs & Courses</span>
             </a>
           </li>
-          <li
-            className={`navbar__listItem navbar__listItem--popDown navbar__collapse ${
-              clickedItem === "admissions" ? "active" : ""
-            }`}
-            id="admissions"
-            onClick={this.onDropDownClick}
-            onFocus={this.onDropDownClick}
-            onBlur={this.onDropDownClick}
-            active={clickedItem === "discover"}
+          <ListItem
+            clickedItem={clickedItem}
+            onDropDownClick={this.onDropDownClick}
+            parent="admissions"
+            dropDownOpen={dropDownOpen}
           >
-            <button href="/admissions" className="navbar__link">
-              <span>Admissions</span>
-              <FontAwesomeIcon icon={faChevronDown} />
-              <Dropdown
-                open={dropDownOpen}
-                clickedItem={clickedItem}
-                parent="admissions"
-              />
-            </button>
-          </li>
-          <li
-            className={`navbar__listItem navbar__listItem--popDown navbar__collapse ${
-              clickedItem === "currentStudents" ? "active" : ""
-            }`}
-            id="currentStudents"
-            onClick={this.onDropDownClick}
-            onFocus={this.onDropDownClick}
-            onBlur={this.onDropDownClick}
+            Admissions
+          </ListItem>
+          <ListItem
+            clickedItem={clickedItem}
+            onDropDownClick={this.onDropDownClick}
+            parent="currentStudents"
+            dropDownOpen={dropDownOpen}
           >
-            <button href="/currentStudents" className="navbar__link">
-              <span>Current Students</span>
-              <FontAwesomeIcon icon={faChevronDown} />
-              <Dropdown
-                open={dropDownOpen}
-                clickedItem={clickedItem}
-                parent="currentStudents"
-              />
-            </button>
-          </li>
-          <li
-            className={`navbar__listItem navbar__listItem--popDown navbar__collapse ${
-              clickedItem === "aboutAU" ? "active" : ""
-            }`}
-            id="aboutAU"
-            onClick={this.onDropDownClick}
-            onFocus={this.onDropDownClick}
-            onBlur={this.onDropDownClick}
+            Current Students
+          </ListItem>
+          <ListItem
+            clickedItem={clickedItem}
+            onDropDownClick={this.onDropDownClick}
+            parent="aboutAU"
+            dropDownOpen={dropDownOpen}
           >
-            <button href="/about" className="navbar__link">
-              <span>About AU</span>
-              <FontAwesomeIcon icon={faChevronDown} />
-              <Dropdown
-                open={dropDownOpen}
-                clickedItem={clickedItem}
-                parent="aboutAU"
-              />
-            </button>
-          </li>
+            About AU
+          </ListItem>
           <li className="ml-auto navbar__listItem">
             <a href="/myAU" className="logo__link--myAU">
               <MyAU />
