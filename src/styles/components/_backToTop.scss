@@ -1,0 +1,22 @@
+.backToTop {
+  display: none;
+  position: fixed;
+  top: 90%;
+  left: 95%;
+  background-color: $primary-color;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 20%;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: $white;
+
+  svg {
+    font-size: 2rem;
+  }
+
+  @include respond-min(670px) {
+    left: 90%;
+  }
+}

@@ -25,12 +25,15 @@ export default function Outline() {
         Course Outline and Timeline
       </h3>
       <div className="outline__content">
-        {data.site.siteMetadata.courseOutline.map((outline, i) => {
+        {data.site.siteMetadata.courseOutline.map((outline, i, arr) => {
           return (
             <div
               className={`outline__contentBox outline__contentBox--${i + 1}`}
             >
-              <Diagram weekNumber={outline.weekNumber} />
+              <Diagram
+                weekNumber={outline.weekNumber}
+                connector={i !== arr.length - 1}
+              />
               <Module modules={outline.modules} />
             </div>
           );

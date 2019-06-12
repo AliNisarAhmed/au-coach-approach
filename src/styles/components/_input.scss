@@ -32,8 +32,4 @@
   .smallLabel {
     @include formLabel;
   }
-
-  .star {
-    color: $primary-color;
-  }
 }

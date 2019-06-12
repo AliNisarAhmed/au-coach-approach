@@ -8,6 +8,7 @@
 }
 
 .outer-circle {
+  position: relative;
   width: 20rem;
   height: 20rem;
   border: 3px solid $primary-color;
@@ -16,6 +17,16 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
+  &__connector::after {
+    content: "";
+    display: block;
+    width: 2px;
+    height: 10rem;
+    position: absolute;
+    top: 101%;
+    background-color: $primary-color;
+  }
 }
 
 .inner-circle {

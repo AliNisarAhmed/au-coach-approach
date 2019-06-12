@@ -1,4 +1,5 @@
 import React from "react";
+import Star from "./Star";
 
 export default function Input({
   label,
@@ -19,7 +20,7 @@ export default function Input({
         name={name}
       />
       <label className={`${value ? "smallLabel" : ""}`} htmlFor={name}>
-        <span className="star">{required ? "*" : null}</span>
+        <Star required={required} />
         {label}
       </label>
     </div>

@@ -1,0 +1,29 @@
+.dropDown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 20rem;
+  background-color: $white;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: stretch;
+  padding: 1rem;
+
+  &__item {
+    color: $secondary-color;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    height: 4rem;
+    padding: 1rem 0;
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+
+    &:hover {
+      background-color: rgba($grey-light, 0.8);
+    }
+  }
+}

@@ -1,11 +1,12 @@
 import React from "react";
+import Star from "./Star";
 
 export default function Radio({ required, label, className }) {
   return (
     <div className={`radio ${className}`}>
       <div className="radio__text">
         <p>
-          {required && <span className="star">*</span>}
+          {<Star required={required} />}
           {label}
         </p>
       </div>
