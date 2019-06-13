@@ -8,6 +8,14 @@
 2. fixed unnecessary `left-padding` on nav on mobile screens.
 3. fixed the outline page, allowing it to occupy 95% of its parent, thus giving it more space.
 
+To test the site using various online tools, use
+
+- https://gtmetrix.com/
+- https://search.google.com/test/mobile-friendly
+- https://www.webpagetest.org/
+- https://web.dev/measure !!
+- https://tools.pingdom.com/
+
 ### Project webpage
 
 The deployed project webpage can be seen on [here](https://au-coach-approach.netlify.com/)
