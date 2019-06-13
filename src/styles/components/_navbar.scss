@@ -26,6 +26,10 @@
       margin-right: 1rem;
       font-size: 1.2rem;
     }
+
+    @include respond-min($navbar__bp2) {
+      padding-left: 0;
+    }
   }
 
   &__listItem {

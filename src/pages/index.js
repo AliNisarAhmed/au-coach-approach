@@ -12,6 +12,8 @@ import Experts from "../sections/Experts";
 import Form from "../sections/Form";
 import SEO from "../components/seo";
 
+import "@fortawesome/fontawesome-svg-core/styles.css";
+
 const IndexPage = () => {
   return (
     <>

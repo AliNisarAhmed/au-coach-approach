@@ -2,6 +2,12 @@
 
 ## Built with GatsbyJS (React) & Sass (CSS Grid and Flexbox mainly)
 
+**Note: `fixed` branch contains 3 changes to the `master` branch.**
+
+1. fixed the large FontAwesomeIcons on initial load by importing fontAwesome css directly in `index.js`, this allows css to load before the icon is displayed.
+2. fixed unnecessary `left-padding` on nav on mobile screens.
+3. fixed the outline page, allowing it to occupy 95% of its parent, thus giving it more space.
+
 ### Project webpage
 
 The deployed project webpage can be seen on [here](https://au-coach-approach.netlify.com/)

@@ -26,6 +26,10 @@
         width: 70%;
       }
 
+      @include respond-min($outline__bp2) {
+        width: 95%;
+      }
+
       &--1 {
         position: absolute;
         top: 10rem;
