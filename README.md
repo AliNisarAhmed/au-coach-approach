@@ -12,6 +12,8 @@
 
 The deployed project webpage can be seen on [here](https://au-coach-approach.netlify.com/)
 
+The `fixed` branch can be seen on [here](https://au-coach-approach2.netlify.com/)
+
 ### Navigating project files
 
 - Start from `src/sections/layout.js`, which lists all the sections of the page, and provides the overall skeleton layout of the page, (The Header and Footer sections are already included in `layout.js`)
